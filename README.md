@@ -11,6 +11,7 @@
 **工具與環境：**
 
 - IDEA
+- MySQL Workbench 8.0 CE
 - Maven 3
 - JDK 20
 
