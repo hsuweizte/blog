@@ -45,7 +45,6 @@
 個人 blog 的用戶角度：
 
 角色：**普通訪客**，**管理員（我）**
-
 - 訪客，可以分頁查看所有的日誌
 - 訪客，可以快速查看日誌數最多的 6 個分類
 - 訪客，可以查看所有的分類
@@ -97,29 +96,18 @@
 ### 2.2 頁面開發
 
 [Semantic UI 官網](https://semantic-ui.com/)
-
 [Semantic UI 中文官網](http://www.semantic-ui.cn/)
-
-[WebStorm 下載與破解](https://imcoding.me/blogs/5)
-
 [背景圖片資源](https://www.toptal.com/designers/subtlepatterns/)
 
 ### 2.3 外掛程式集成
 
 [編輯器 Markdown](https://pandao.github.io/editor.md/)
-
 [內容排版 typo.css](https://github.com/sofish/typo.css)
-
 [動畫 animate.css](https://daneden.github.io/animate.css/)
-
-[代碼高亮 prism](https://github.com/PrismJS/prism)
-
+[代碼亮顯 prism](https://github.com/PrismJS/prism)
 [目錄生成 Tocbot](https://tscanlin.github.io/tocbot/)
-
 [滾動偵測 waypoints](http://imakewebthings.com/waypoints/)
-
 [平滑滾動 jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
-
 [QR CODE 生成 qrcode.js](https://davidshimjs.github.io/qrcodejs/)
 
 ## 3、IDE
