@@ -11,6 +11,7 @@
 **工具與環境：**
 
 - IDEA
+- MySQL Workbench 8.0 CE
 - Maven 3
 - JDK 20
 
@@ -45,7 +46,6 @@
 個人 blog 的用戶角度：
 
 角色：**普通訪客**，**管理員（我）**
-
 - 訪客，可以分頁查看所有的日誌
 - 訪客，可以快速查看日誌數最多的 6 個分類
 - 訪客，可以查看所有的分類
@@ -90,7 +90,7 @@
 
 **頁面規劃：**
 
-前端展示：首頁、詳情頁、分類、標籤、歸檔、關於我
+前端展示：首頁、詳情頁、分類、標籤、時間歸檔、關於我
 
 後臺管理：範本頁
 
@@ -99,8 +99,6 @@
 [Semantic UI 官網](https://semantic-ui.com/)
 
 [Semantic UI 中文官網](http://www.semantic-ui.cn/)
-
-[WebStorm 下載與破解](https://imcoding.me/blogs/5)
 
 [背景圖片資源](https://www.toptal.com/designers/subtlepatterns/)
 
@@ -112,7 +110,7 @@
 
 [動畫 animate.css](https://daneden.github.io/animate.css/)
 
-[代碼高亮 prism](https://github.com/PrismJS/prism)
+[代碼亮顯 prism](https://github.com/PrismJS/prism)
 
 [目錄生成 Tocbot](https://tscanlin.github.io/tocbot/)
 
@@ -171,6 +169,11 @@ spring:
       ddl-auto: update
     show-sql: true
 ```
+- 資料庫匯入:MySQL 8.0 Command Line Client
+
+```yaml
+source %path%/blog.sql;
+```
 
 - logback 配置
 - application.yml:
@@ -183,7 +186,7 @@ logging:
   file: log/imcoding.log
 ```
 
-logback-spring.xml：
+- logback-spring.xml：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
