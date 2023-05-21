@@ -150,7 +150,7 @@
 </dependency>
 ```
 
--application.yml:
+- application.yml:
 ```yaml
 spring:
   thymeleaf:
