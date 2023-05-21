@@ -1,84 +1,84 @@
-
 # micro blog
 
->  作者：徐瑋澤
+> 作者：徐瑋澤
 
 **使用的技術：**
-*  後端：Spring Boot + JPA + thymeleaf
-*  資料庫：MySQL
-*  前端UI：Semantic UI框架
+
+- 後端：Spring Boot + JPA + thymeleaf
+- 資料庫：MySQL
+- 前端 UI：Semantic UI 框架
 
 **工具與環境：**
-*  IDEA
-*  Maven 3
-*  JDK 20
+
+- IDEA
+- Maven 3
+- JDK 20
 
 **內容模組：**
-*  需求分析與功能規劃
-*  頁面設計與開發
-*  技術框架搭建
-*  後端管理功能實現
-*  前端管理功能實現
+
+- 需求分析與功能規劃
+- 頁面設計與開發
+- 技術框架搭建
+- 後端管理功能實現
+- 前端管理功能實現
 
 ## 1、需求與功能
+
 ### 1.1 用戶角度
 
 用戶角度是敏捷框架中的一種開發方法。可以説明開發者轉換視角，以用戶的角度更好的把握需求，從而實現具有商業價值的功能。
 
->  使用者角度最好是用戶團隊編寫
+> 使用者角度最好是用戶團隊編寫
 
 **用戶故事範本**：
 
--  As a (role of user), I want (some feature) so that (some business value).
--  作為一個(角色) 使用者，我可以做(某個功能) 事情，如此可以有(某個商業價值) 的好處
+- As a (role of user), I want (some feature) so that (some business value).
+- 作為一個(角色) 使用者，我可以做(某個功能) 事情，如此可以有(某個商業價值) 的好處
 
 **關鍵點**：角色、功能、商業價值
 
 **舉例**：
 
--  作為一個招聘網站**註冊用戶**，我想**查看最近3天發佈的招聘資訊**，以便於**瞭解最新的招聘資訊**。
--  作為公司，可以張貼新工作。
+- 作為一個招聘網站**註冊用戶**，我想**查看最近 3 天發佈的招聘資訊**，以便於**瞭解最新的招聘資訊**。
+- 作為公司，可以張貼新工作。
 
-
-個人blog的用戶角度：
+個人 blog 的用戶角度：
 
 角色：**普通訪客**，**管理員（我）**
 
-*  訪客，可以分頁查看所有的日誌
-*  訪客，可以快速查看日誌數最多的6個分類
-*  訪客，可以查看所有的分類
-*  訪客，可以查看某個分類下的日誌列表
-*  訪客，可以快速查看標記日誌最多的10個標籤
-*  訪客，可以查看所有的標籤
-*  訪客，可以查看某個標籤下的日誌列表
-*  訪客，可以根據年度時間線查看日誌列表
-*  訪客，可以快速查看最新的推薦日誌
-*  訪客，可以用關鍵字全域搜索日誌
-*  訪客，可以查看單個日誌內容
-*  訪客，可以對日誌內容進行評論
-*  訪客，可以讚賞日誌內容
-*  訪客，可以使用手機QR Code閱讀日誌內容
-*  訪客，可以在首頁掃描QR CODE關注我
-*  我，可以帳號和密碼登錄後臺管理
-*  我，可以管理日誌
-   *  我，可以發佈新日誌
-   *  我，可以對日誌進行分類
-   *  我，可以對日誌打標籤
-   *  我，可以修改日誌
-   *  我，可以刪除日誌
-   *  我，可以根據標題，分類，標籤查詢日誌
-*  我，可以管理日誌分類
-   *  我，可以新增一個分類
-   *  我，可以修改一個分類
-   *  我，可以刪除一個分類
-   *  我，可以根據分類名稱查詢分類
-*  我，可以管理標籤
-   *  我，可以新增一個標籤
-   *  我，可以修改一個標籤
-   *  我，可以刪除一個標籤
-   *  我，可以根據名稱查詢標籤
-
-
+- 訪客，可以分頁查看所有的日誌
+- 訪客，可以快速查看日誌數最多的 6 個分類
+- 訪客，可以查看所有的分類
+- 訪客，可以查看某個分類下的日誌列表
+- 訪客，可以快速查看標記日誌最多的 10 個標籤
+- 訪客，可以查看所有的標籤
+- 訪客，可以查看某個標籤下的日誌列表
+- 訪客，可以根據年度時間線查看日誌列表
+- 訪客，可以快速查看最新的推薦日誌
+- 訪客，可以用關鍵字全域搜索日誌
+- 訪客，可以查看單個日誌內容
+- 訪客，可以對日誌內容進行評論
+- 訪客，可以讚賞日誌內容
+- 訪客，可以使用手機 QR Code 閱讀日誌內容
+- 訪客，可以在首頁掃描 QR CODE 關注我
+- 我，可以帳號和密碼登錄後臺管理
+- 我，可以管理日誌
+  - 我，可以發佈新日誌
+  - 我，可以對日誌進行分類
+  - 我，可以對日誌打標籤
+  - 我，可以修改日誌
+  - 我，可以刪除日誌
+  - 我，可以根據標題，分類，標籤查詢日誌
+- 我，可以管理日誌分類
+  - 我，可以新增一個分類
+  - 我，可以修改一個分類
+  - 我，可以刪除一個分類
+  - 我，可以根據分類名稱查詢分類
+- 我，可以管理標籤
+  - 我，可以新增一個標籤
+  - 我，可以修改一個標籤
+  - 我，可以刪除一個標籤
+  - 我，可以根據名稱查詢標籤
 
 ### 1.2 功能規劃
 
@@ -173,7 +173,7 @@ spring:
     show-sql: true
 ```
 
-- logback配置
+- logback 配置
 
   application.yml:
 
@@ -233,6 +233,7 @@ logback-spring.xml：
   - application-pro.yml
 
 ### 3.2 異常處理
+
 **1、定義錯誤頁面**
 
 - 404
@@ -349,24 +350,17 @@ public class NotFoundExcepiton extends RuntimeException {
 
 **評論類自關聯關係：**
 
-
 **Blog 類：**
-
 
 **Type 類：**
 
-
 **Tag 類：**
-
 
 **Comment 類：**
 
-
 **User 類：**
 
-
 ### 4.2 應用分層
-
 
 ### 4.3 命名約定
 
@@ -378,7 +372,6 @@ public class NotFoundExcepiton extends RuntimeException {
 - 插入的方法用 save(推薦)或 insert 做首碼。
 - 刪除的方法用 remove(推薦)或 delete 做首碼。
 - 修改的方法用 update 做首碼。
-
 
 ## 5、後臺管理功能實現
 
@@ -399,7 +392,6 @@ public class NotFoundExcepiton extends RuntimeException {
 **1、分類管理頁面**
 
 **2、分類列表分頁**
-
 
 **3、分類新增、修改、刪除**
 
@@ -436,19 +428,23 @@ public class NotFoundExcepiton extends RuntimeException {
 
 ```xml
 <dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark</artifactId>
-   <version>0.10.0</version>
+    <groupId>org.commonmark</groupId>
+    <artifactId>commonmark</artifactId>
+    <version>0.21.0</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.commonmark/commonmark-ext-heading-anchor -->
 <dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark-ext-heading-anchor</artifactId>
-   <version>0.10.0</version>
+    <groupId>org.commonmark</groupId>
+    <artifactId>commonmark-ext-heading-anchor</artifactId>
+    <version>0.21.0</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.commonmark/commonmark-ext-gfm-tables -->
 <dependency>
-   <groupId>com.atlassian.commonmark</groupId>
-   <artifactId>commonmark-ext-gfm-tables</artifactId>
-   <version>0.10.0</version>
+    <groupId>org.commonmark</groupId>
+    <artifactId>commonmark-ext-gfm-tables</artifactId>
+    <version>0.18.0</version>
 </dependency>
 ```
 
@@ -465,4 +461,3 @@ public class NotFoundExcepiton extends RuntimeException {
 ### 6.4 歸檔頁
 
 ### 6.5 關於我
-
