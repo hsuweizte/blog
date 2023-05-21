@@ -144,14 +144,14 @@
   pom.xml:
 
 ```xml
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
 ```
 
+-application.yml:
 ```yaml
-application.yml:
 spring:
   thymeleaf:
     mode: HTML
@@ -173,9 +173,9 @@ spring:
 ```
 
 - logback 配置
+- application.yml:
 
 ```yaml
-application.yml:
 logging:
   level:
     root: info
