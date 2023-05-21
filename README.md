@@ -89,7 +89,7 @@
 
 **頁面規劃：**
 
-前端展示：首頁、詳情頁、分類、標籤、歸檔、關於我
+前端展示：首頁、詳情頁、分類、標籤、時間歸檔、關於我
 
 後臺管理：範本頁
 
@@ -168,10 +168,10 @@ spring:
       ddl-auto: update
     show-sql: true
 ```
-- 資料庫匯入
+- 資料庫匯入:MySQL 8.0 Command Line Client
 
 ```yaml
-source %path%/blog.sql
+source %path%/blog.sql;
 ```
 
 - logback 配置
@@ -185,7 +185,7 @@ logging:
   file: log/imcoding.log
 ```
 
-logback-spring.xml：
+- logback-spring.xml：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
