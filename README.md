@@ -347,7 +347,7 @@ public class NotFoundExcepiton extends RuntimeException {
 - 日誌評論 Comment
 - 用戶 User
 
-**實體關係：**
+**實體關係(E-R diagram)：**
 
 **評論類自關聯關係：**
 
