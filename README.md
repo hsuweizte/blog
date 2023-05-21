@@ -96,18 +96,27 @@
 ### 2.2 頁面開發
 
 [Semantic UI 官網](https://semantic-ui.com/)
+
 [Semantic UI 中文官網](http://www.semantic-ui.cn/)
+
 [背景圖片資源](https://www.toptal.com/designers/subtlepatterns/)
 
 ### 2.3 外掛程式集成
 
 [編輯器 Markdown](https://pandao.github.io/editor.md/)
+
 [內容排版 typo.css](https://github.com/sofish/typo.css)
+
 [動畫 animate.css](https://daneden.github.io/animate.css/)
+
 [代碼亮顯 prism](https://github.com/PrismJS/prism)
+
 [目錄生成 Tocbot](https://tscanlin.github.io/tocbot/)
+
 [滾動偵測 waypoints](http://imakewebthings.com/waypoints/)
+
 [平滑滾動 jquery.scrollTo](https://github.com/flesler/jquery.scrollTo)
+
 [QR CODE 生成 qrcode.js](https://davidshimjs.github.io/qrcodejs/)
 
 ## 3、IDE
