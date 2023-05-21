@@ -82,7 +82,7 @@
 
 ### 1.2 功能規劃
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
+![](**https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg**)
 
 ## 2、頁面設計與開發
 
