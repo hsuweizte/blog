@@ -81,8 +81,8 @@
   - 我，可以根據名稱查詢標籤
 
 ### 1.2 功能規劃
-![image info](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
 
+![alt text](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
 
 
 ## 2、頁面設計與開發
