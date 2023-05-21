@@ -168,6 +168,11 @@ spring:
       ddl-auto: update
     show-sql: true
 ```
+- 資料庫匯入
+
+```yaml
+source %path%/blog.sql
+```
 
 - logback 配置
 - application.yml:
