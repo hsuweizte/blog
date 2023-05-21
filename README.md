@@ -82,7 +82,8 @@
 
 ### 1.2 功能規劃
 
-  <img src="[your_relative_path_here](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)" width="350" title="hover text">
+![Alt text](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg "Optional title")
+
 
 
 ## 2、頁面設計與開發
