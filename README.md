@@ -150,9 +150,8 @@
         </dependency>
 ```
 
-    application.yml:
-
 ```yaml
+application.yml:
 spring:
   thymeleaf:
     mode: HTML
@@ -175,9 +174,8 @@ spring:
 
 - logback 配置
 
-  application.yml:
-
 ```yaml
+application.yml:
 logging:
   level:
     root: info
