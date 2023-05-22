@@ -82,8 +82,6 @@
 
 ### 1.2 功能規劃
 
-![Alt text](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
-
 
 
 ## 2、頁面設計與開發
@@ -351,18 +349,25 @@ public class NotFoundExcepiton extends RuntimeException {
 
 **實體關係(E-R diagram)：**
 
+![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
+
 **評論類自關聯關係：**
+![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
 
 **Blog 類：**
+![Alt text](./img4readme/class Blog.jpg?raw=true "Optional Title")
 
 **Type 類：**
+![Alt text](./img4readme/class Type.jpg?raw=true "Optional Title")
 
 **Tag 類：**
+![Alt text](./img4readme/class Tag.jpg?raw=true "Optional Title")
 
 **Comment 類：**
+![Alt text](./img4readme/class Comment.jpg?raw=true "Optional Title")
 
 **User 類：**
-
+![Alt text](./img4readme/class User.jpg?raw=true "Optional Title")
 ### 4.2 應用分層
 
 ### 4.3 命名約定
