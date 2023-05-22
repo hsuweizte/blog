@@ -2,9 +2,6 @@ package com.hsuweizte.bloghsuweizte.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- * Created by limi on 2017/10/15.
- */
 public class MD5Utils {
     /**
      * MD5加密类
