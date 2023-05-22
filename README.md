@@ -473,8 +473,14 @@ public class NotFoundExcepiton extends RuntimeException {
 
 ### 6.2 分類頁
 
+**1、展示分類
+**2、依據分類展示日誌
+
 ### 6.3 標籤頁
+**1、展示標籤
+**2、依據標籤展示日誌
 
 ### 6.4 歸檔頁
+**1、依據年份展示日誌
 
 ### 6.5 關於我
