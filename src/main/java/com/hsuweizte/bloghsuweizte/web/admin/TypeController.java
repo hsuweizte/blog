@@ -1,4 +1,5 @@
 package com.hsuweizte.bloghsuweizte.web.admin;
+
 import com.hsuweizte.bloghsuweizte.po.Type;
 import com.hsuweizte.bloghsuweizte.service.TypeService;
 import jakarta.validation.Valid;
@@ -15,10 +16,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-/**
- * Created by limi on 2017/10/16.
- */
-
 @Controller
 @RequestMapping("/admin")
 public class TypeController {
@@ -27,7 +24,8 @@ public class TypeController {
     private TypeService typeService;
 
     @GetMapping("/types")
-    public String types(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable, Model model) {
+    public String types(@PageableDefault(size = 5, sort = { "id" }, direction = Sort.Direction.DESC) Pageable pageable,
+            Model model) {
         model.addAttribute("page", typeService.listType(pageable));
         return "admin/types";
     }
@@ -44,11 +42,10 @@ public class TypeController {
         return "admin/types-input";
     }
 
-
     @PostMapping("/types")
     public String post(@Valid Type type, BindingResult result, RedirectAttributes attributes) {
         Type typegetByName = typeService.getTypeByName(type.getName());
-        //根據傳入的物件名從資料庫可以取出，代表重複
+        // 根據傳入的物件名從資料庫可以取出，代表重複
         if (typegetByName != null) {
             result.rejectValue("name", "nameError", "不能添加重複的分類");
         }
@@ -64,9 +61,9 @@ public class TypeController {
         return "redirect:/admin/types";
     }
 
-
     @PostMapping("/types/{id}")
-    public String editPost(@Valid Type type, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
+    public String editPost(@Valid Type type, BindingResult result, @PathVariable Long id,
+            RedirectAttributes attributes) {
         Type type1 = typeService.getTypeByName(type.getName());
         if (type1 != null) {
             result.rejectValue("name", "nameError", "不能添加重复的分类");
@@ -89,6 +86,4 @@ public class TypeController {
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/admin/types";
     }
-
-
 }

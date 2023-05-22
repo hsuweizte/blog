@@ -3,12 +3,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class MD5Utils {
-    /**
-     * MD5加密类
-     *
-     * @param str 要加密的字符串
-     * @return 加密后的字符串
-     */
     public static String code(String str) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");

@@ -6,16 +6,7 @@ import java.beans.PropertyDescriptor;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by limi on 2017/10/21.
- */
 public class MyBeanUtils {
-    /**
-     * 获取所有的属性值为空属性名数组
-     *
-     * @param source
-     * @return
-     */
     public static String[] getNullPropertyNames(Object source) {
         BeanWrapper beanWrapper = new BeanWrapperImpl(source);
         PropertyDescriptor[] pds = beanWrapper.getPropertyDescriptors();
