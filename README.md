@@ -5,7 +5,7 @@
 **使用的技術：**
 
 - 後端：Spring Boot + JPA + thymeleaf
-- 資料庫：MySQL
+- 資料庫：MySQL 8.0.33
 - 前端 UI：Semantic UI 框架
 
 **工具與環境：**
