@@ -82,7 +82,7 @@
 
 ### 1.2 功能規劃
 
-![Alt text](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
+![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
 
 
 
