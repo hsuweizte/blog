@@ -82,7 +82,9 @@
 
 ### 1.2 功能規劃
 
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
+![Alt text](https://ws2.sinaimg.cn/large/006tKfTcgy1fk7m27hbn4j31ds0ycdnp.jpg)
+
+
 
 ## 2、頁面設計與開發
 
@@ -347,7 +349,7 @@ public class NotFoundExcepiton extends RuntimeException {
 - 日誌評論 Comment
 - 用戶 User
 
-**實體關係：**
+**實體關係(E-R diagram)：**
 
 **評論類自關聯關係：**
 
