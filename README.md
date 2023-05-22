@@ -352,23 +352,32 @@ public class NotFoundExcepiton extends RuntimeException {
 ![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
 
 **評論類自關聯關係：**
-![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/comment-relation.jpg?raw=true "Optional Title")
 
 **Blog 類：**
-![Alt text](./img4readme/class Blog.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/class-Blog.jpg?raw=true "Optional Title")
 
 **Type 類：**
-![Alt text](./img4readme/class Type.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/class-Type.jpg?raw=true "Optional Title")
 
 **Tag 類：**
-![Alt text](./img4readme/class Tag.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/class-Tag.jpg?raw=true "Optional Title")
 
 **Comment 類：**
-![Alt text](./img4readme/class Comment.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/class-Comment.jpg?raw=true "Optional Title")
 
 **User 類：**
-![Alt text](./img4readme/class User.jpg?raw=true "Optional Title")
+
+![Alt text](./img4readme/class-User.jpg?raw=true "Optional Title")
+
 ### 4.2 應用分層
+
+![Alt text](./img4readme/application-layering.jpg?raw=true "Optional Title")
 
 ### 4.3 命名約定
 
