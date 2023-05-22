@@ -1,4 +1,4 @@
-# micro blog
+# Light Blog
 
 > 作者：徐瑋澤
 
