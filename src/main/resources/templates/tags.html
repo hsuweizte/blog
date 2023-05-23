@@ -3,13 +3,13 @@
 <head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>标签</title>
+    <title>標籤</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css">
 </head>
 <body>
 
-<!--导航-->
+<!--nav-->
 <nav th:replace="_fragments :: menu(3)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
@@ -28,18 +28,18 @@
         </div>
 </nav>
 
-<!--中间内容-->
+<!--middle context-->
 <div class="m-container-small m-padded-tb-big animated fadeIn">
     <div class="ui container">
         <!--header-->
         <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <h3 class="ui teal header">标签</h3>
+                    <h3 class="ui teal header">標籤</h3>
                 </div>
                 <div class="right aligned column">
                     共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="${#arrays.length(tags)}">
-                    14 </h2> 个
+                    14 </h2> 個
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"
                class="ui basic left pointing large label m-margin-tb-tiny"
                th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${tags}">
-                <span th:text="${tag.name}">方法论</span>
+                <span th:text="${tag.name}">方法論</span>
                 <div class="detail" th:text="${#arrays.length(tag.blogs)}">23</div>
             </a>
         </div>
@@ -58,10 +58,10 @@
                 <div class="ui middle aligned mobile reversed stackable grid">
                     <div class="eleven wide column">
                         <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank"
-                                                 class="m-black" th:text="${blog.title}">你真的理解什么是财富自由吗?</a>
+                                                 class="m-black" th:text="${blog.title}">你真的理解什麼是財富自由嗎?</a>
                         </h3>
                         <p class="m-text" th:text="|${blog.description}......|">
-                            正确做好任何一件事情的前提是清晰、正确的理解目标。而事实是，我们很多人很多时候根本没有对目标正确的定义，甚至根本从来就没有想过，只是大家都那么做而已…...</p>
+                            正確做好任何一件事情的前提是清晰、正確的理解目標。而事實是，我們很多人很多時候根本沒有對目標正確的定義，甚至根本從來就沒有想過，只是大家都那麼做而已…...</p>
                         <div class="ui grid">
                             <div class="row">
                                 <div class="eleven wide column">
@@ -83,7 +83,7 @@
                                 </div>
                                 <div class="right aligned five wide column">
                                     <a href="#" target="_blank" class="ui teal basic label m-padded-tiny m-text-thin"
-                                       th:text="${blog.type.name}">认知升级</a>
+                                       th:text="${blog.type.name}">認知升級</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -91,7 +91,7 @@
                                     <a href="#" th:href="@{/tags/{id}(id=${tag.id})}"
                                        class="ui  basic left pointing label m-padded-mini m-text-thin"
                                        th:classappend="${tag.id==activeTagId} ? 'teal'" th:each="tag : ${blog.tags}"
-                                       th:text="${tag.name}">方法论</a>
+                                       th:text="${tag.name}">方法論</a>
                                 </div>
                             </div>
                         </div>
@@ -114,11 +114,11 @@
             <div class="ui middle aligned two column grid">
                 <div class="column">
                     <a href="#" th:href="@{'/tags/'+${activeTagId}(page=${page.number}-1)}" th:unless="${page.first}"
-                       class="ui mini teal basic button">上一页</a>
+                       class="ui mini teal basic button">上一頁</a>
                 </div>
                 <div class="right aligned column">
                     <a href="#" th:href="@{'/tags/'+${activeTagId}(page=${page.number}+1)}" th:unless="${page.last}"
-                       class="ui mini teal basic button">下一页</a>
+                       class="ui mini teal basic button">下一頁</a>
                 </div>
             </div>
         </div>
@@ -143,3 +143,4 @@
 </script>
 </body>
 </html>
+
