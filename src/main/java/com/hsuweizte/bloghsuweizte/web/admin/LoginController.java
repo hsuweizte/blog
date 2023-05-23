@@ -1,4 +1,5 @@
 package com.hsuweizte.bloghsuweizte.web.admin;
+
 import com.hsuweizte.bloghsuweizte.po.User;
 import com.hsuweizte.bloghsuweizte.service.UserService;
 import jakarta.servlet.http.HttpSession;
@@ -36,7 +37,7 @@ public class LoginController {
             session.setAttribute("user", user);
             return "admin/index";
         } else {
-            attributes.addFlashAttribute("message", "用户名和密码错误");
+            attributes.addFlashAttribute("message", "用户名和密碼錯誤");
             return "redirect:/admin";
         }
     }
