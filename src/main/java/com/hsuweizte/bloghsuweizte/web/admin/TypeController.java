@@ -24,8 +24,8 @@ public class TypeController {
     private TypeService typeService;
 
     @GetMapping("/types")
-    public String types(@PageableDefault(size = 5, sort = { "id" }, direction = Sort.Direction.DESC) Pageable pageable,
-            Model model) {
+    public String types(@PageableDefault(size = 5, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable,
+                        Model model) {
         model.addAttribute("page", typeService.listType(pageable));
         return "admin/types";
     }
@@ -63,7 +63,7 @@ public class TypeController {
 
     @PostMapping("/types/{id}")
     public String editPost(@Valid Type type, BindingResult result, @PathVariable Long id,
-            RedirectAttributes attributes) {
+                           RedirectAttributes attributes) {
         Type type1 = typeService.getTypeByName(type.getName());
         if (type1 != null) {
             result.rejectValue("name", "nameError", "不能添加重复的分类");

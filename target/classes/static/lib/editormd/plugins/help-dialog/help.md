@@ -30,7 +30,7 @@
 | Ctrl + U / Command + U                          | 插入无序列表                     | Insert unordered list                             |
 | Ctrl + Q                                        | 代码折叠切换                     | Switch code fold                                  |
 | Ctrl + Z / Command + Z                          | 撤销                         | Undo                                              |
-| Ctrl + Y / Command + Y       | 重做                         | Redo                                              |
+| Ctrl + Y / Command + Y                          | 重做                         | Redo                                              |
 | Ctrl + Shift + A                                | 插入@链接                      | Insert &#64;link                                  |
 | Ctrl + Shift + C                                | 插入行内代码                     | Insert inline code                                |
 | Ctrl + Shift + E                                | 打开插入Emoji表情对话框             | Open emoji dialog                                 |
@@ -42,7 +42,7 @@
 | Ctrl + Shift + L                                | 打开插入链接对话框                  | Open link dialog                                  |
 | Ctrl + Shift + O                                | 插入有序列表                     | Insert ordered list                               |
 | Ctrl + Shift + P                                | 打开插入PRE对话框                 | Open Preformatted text dialog                     |
-| Ctrl + Shift + Q         | 插入引用                       | Insert blockquotes                                |
+| Ctrl + Shift + Q                                | 插入引用                       | Insert blockquotes                                |
 | Ctrl + Shift + R / Shift + Command + Option + F | 全部替换                       | Replace all                                       |
 | Ctrl + Shift + S                                | 插入删除线                      | Insert strikethrough                              |
 | Ctrl + Shift + T                                | 打开插入表格对话框                  | Open table dialog                                 |
