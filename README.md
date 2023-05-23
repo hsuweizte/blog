@@ -1,6 +1,8 @@
 # Light Blog
 
 > 作者：徐瑋澤
+> 
+[快速展示](https://youtu.be/CFzC0LXGN48)
 
 **使用的技術：**
 
