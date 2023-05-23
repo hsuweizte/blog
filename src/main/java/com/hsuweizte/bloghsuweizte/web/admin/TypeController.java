@@ -66,7 +66,7 @@ public class TypeController {
                            RedirectAttributes attributes) {
         Type type1 = typeService.getTypeByName(type.getName());
         if (type1 != null) {
-            result.rejectValue("name", "nameError", "不能添加重复的分类");
+            result.rejectValue("name", "nameError", "不能添加重複的分類");
         }
         if (result.hasErrors()) {
             return "admin/types-input";
