@@ -2,6 +2,7 @@ package com.hsuweizte.bloghsuweizte.po;
 
 import jakarta.persistence.*;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +22,9 @@ public class User {
     @GeneratedValue
     private Long id;
     private String nickname;
+    @NotBlank
     private String username;
+    @NotBlank
     private String password;
     private String email;
     private String avatar;
