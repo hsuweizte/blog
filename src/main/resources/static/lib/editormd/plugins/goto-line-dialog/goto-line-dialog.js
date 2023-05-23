@@ -19,13 +19,13 @@
 		var langs = {
 			"zh-cn" : {
 				toolbar : {
-					"goto-line" : "跳转到行"
+					"goto-line" : "跳轉到行"
 				},
 				dialog : {
 					"goto-line" : {
-						title  : "跳转到行",
-						label  : "请输入行号",
-						error  : "错误："
+						title  : "跳轉到行",
+						label  : "請輸入行號",
+						error  : "錯誤："
 					}
 				}
 			},
@@ -73,8 +73,8 @@
 
 			dialogLang.error += dialogLang.label + " 1-" + lineCount;
 
-			if (editor.find("." + dialogName).length < 1) 
-			{			
+			if (editor.find("." + dialogName).length < 1)
+			{
 				var dialogContent = [
 					"<div class=\"editormd-form\" style=\"padding: 10px 0;\">",
 					"<p style=\"margin: 0;\">" + dialogLang.label + " 1-" + lineCount +"&nbsp;&nbsp;&nbsp;<input type=\"number\" class=\"number-input\" style=\"width: 60px;\" value=\"1\" max=\"" + lineCount + "\" min=\"1\" data-line-number /></p>",
@@ -95,7 +95,7 @@
 						backgroundColor : settings.dialogMaskBgColor
 					},
 					buttons    : {
-                        enter : [lang.buttons.enter, function() {
+						enter : [lang.buttons.enter, function() {
 							var line   = parseInt(this.find("[data-line-number]").val());
 
 							if (line < 1 || line > lineCount) {
@@ -106,16 +106,16 @@
 
 							_this.gotoLine(line);
 
-                            this.hide().lockScreen(false).hideMask();
+							this.hide().lockScreen(false).hideMask();
 
-                            return false;
-                        }],
+							return false;
+						}],
 
-                        cancel : [lang.buttons.cancel, function() {                                   
-                            this.hide().lockScreen(false).hideMask();
+						cancel : [lang.buttons.cancel, function() {
+							this.hide().lockScreen(false).hideMask();
 
-                            return false;
-                        }]
+							return false;
+						}]
 					}
 				});
 			}
@@ -128,30 +128,31 @@
 		};
 
 	};
-    
+
 	// CommonJS/Node.js
 	if (typeof require === "function" && typeof exports === "object" && typeof module === "object")
-    { 
-        module.exports = factory;
-    }
+	{
+		module.exports = factory;
+	}
 	else if (typeof define === "function")  // AMD/CMD/Sea.js
-    {
+	{
 		if (define.amd) { // for Require.js
 
 			define(["editormd"], function(editormd) {
-                factory(editormd);
-            });
+				factory(editormd);
+			});
 
 		} else { // for Sea.js
 			define(function(require) {
-                var editormd = require("./../../editormd");
-                factory(editormd);
-            });
+				var editormd = require("./../../editormd");
+				factory(editormd);
+			});
 		}
-	} 
+	}
 	else
 	{
-        factory(window.editormd);
+		factory(window.editormd);
 	}
 
 })();
+
