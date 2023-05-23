@@ -1,0 +1,20 @@
+#global
+spring:
+  #配置Thymeleaf
+  thymeleaf:
+    mode: HTML
+  #指定生產環境
+  profiles:
+    active: dev
+  #國際化
+  messages:
+    basename: i18n/messages
+
+  mvc:
+    favicon:
+      enabled: true
+
+comment.avatar: /images/avatar.png
+
+
+
