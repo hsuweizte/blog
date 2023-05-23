@@ -22,7 +22,7 @@ public class Tag {
     @NotBlank(message = "標籤不得為空")
     private String name;
 
-    @ManyToMany(mappedBy = "tags")
+    @ManyToMany(mappedBy = "tags", cascade = CascadeType.ALL)
     private List<Blog> blogs = new ArrayList<>();
 
     private int blogsize;

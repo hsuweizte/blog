@@ -5,9 +5,12 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static jakarta.persistence.CascadeType.*;
 
 @Data
 @AllArgsConstructor
@@ -22,7 +25,7 @@ public class Type {
     @NotBlank(message = "分類不得為空")
     private String name;
 
-    @OneToMany(mappedBy = "type")
+    @OneToMany(mappedBy = "type", cascade = ALL)
     private List<Blog> blogs = new ArrayList<>();
 
     private int blogsize;
