@@ -38,7 +38,7 @@
 
 > 使用者角度最好是用戶團隊編寫
 
-**用戶故事範本**：
+**使用者角度觀念**：
 
 - As a (role of user), I want (some feature) so that (some business value).
 - 作為一個(角色) 使用者，我可以做(某個功能) 事情，如此可以有(某個商業價值) 的好處
@@ -353,31 +353,31 @@ public class NotFoundExcepiton extends RuntimeException {
 
 **實體關係(E-R diagram)：**
 
-![Alt text](./img4readme/blog-ER.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/blog-ER.jpg?raw=true "blog-ER")
 
 **評論類自關聯關係：**
 
-![Alt text](./img4readme/comment-relation.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/comment-relation.jpg?raw=true "Comment ER")
 
 **Blog 類：**
 
-![Alt text](./img4readme/class-Blog.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/class-Blog.jpg?raw=true "Class Blog")
 
 **Type 類：**
 
-![Alt text](./img4readme/class-Type.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/class-Type.jpg?raw=true "Class Type")
 
 **Tag 類：**
 
-![Alt text](./img4readme/class-Tag.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/class-Tag.jpg?raw=true "Class Tag")
 
 **Comment 類：**
 
-![Alt text](./img4readme/class-Comment.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/class-Comment.jpg?raw=true "Class Comment")
 
 **User 類：**
 
-![Alt text](./img4readme/class-User.jpg?raw=true "Optional Title")
+![Alt text](./img4readme/class-User.jpg?raw=true "Class User")
 
 ### 4.2 應用分層
 
@@ -398,49 +398,33 @@ public class NotFoundExcepiton extends RuntimeException {
 
 ### 5.1 登錄
 
-**1、構建登錄頁面和後臺管理首頁**
-
-**2、UserService 和 UserRepository**
-
-**3、LoginController 實現登錄**
-
-**4、MD5 加密**
-
-**5、登錄攔截器**
+1. **構建登錄頁面和後臺管理首頁**
+2. **UserService 和 UserRepository**
+3. **LoginController 實現登錄**
+4. **MD5 加密**
+5. **登錄攔截器**
 
 ### 5.2 分類管理
-
-**1、分類管理頁面**
-
-**2、分類列表分頁**
-
-**3、分類新增、修改、刪除**
+1. **分類管理頁面**
+2. **分類列表分頁**
+3. **分類新增、修改、刪除**
 
 ### 5.3 標籤管理
 
 ### 5.4 日誌管理
-
-**1、日誌分頁查詢**
-
-**2、日誌新增**
-
-**3、日誌修改**
-
-**4、日誌刪除**
+1. **日誌分頁查詢**
+2. **日誌新增**
+3. **日誌修改**
+4. **日誌刪除**
 
 ## 6、前端展示功能實現
 
 ### 6.1 首頁展示
-
-**1、日誌列表**
-
-**2、top 分類**
-
-**3、top 標籤**
-
-**4、最新日誌推薦**
-
-**5、日誌詳情**
+1. **日誌列表**
+2. **top 分類**
+3. **top 標籤**
+4. **最新日誌推薦**
+5. **日誌詳情**
 
 **1、Markdown 轉換 HTML**
 
@@ -476,20 +460,14 @@ public class NotFoundExcepiton extends RuntimeException {
 - 管理員回復評論功能
 
 ### 6.2 分類頁
-
-**1、展示分類**
-
-**2、依據分類展示日誌**
+1. **展示分類**
+2. **依據分類展示日誌**
 
 ### 6.3 標籤頁
-
-**1、展示標籤**
-
-**2、依據標籤展示日誌**
+1. **展示標籤**
+2. **依據標籤展示日誌**
 
 ### 6.4 歸檔頁
-
-**1、依據年份展示日誌**
+1. **依據年份展示日誌**
 
 ### 6.5 關於我
-
