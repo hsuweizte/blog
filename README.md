@@ -102,8 +102,6 @@
 
 [Semantic UI 官網](https://semantic-ui.com/)
 
-[Semantic UI 中文官網](http://www.semantic-ui.cn/)
-
 [背景圖片資源](https://www.toptal.com/designers/subtlepatterns/)
 
 ### 2.3 外掛程式集成
