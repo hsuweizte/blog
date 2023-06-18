@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hsuweizte.bloghsuweizte.BlogHsuweizteApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.003 s - in com.hsuweizte.bloghsuweizte.BlogHsuweizteApplicationTests
