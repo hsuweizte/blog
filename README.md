@@ -432,21 +432,21 @@ public class NotFoundExcepiton extends RuntimeException {
 <dependency>
     <groupId>org.commonmark</groupId>
     <artifactId>commonmark</artifactId>
-    <version>0.21.0</version>
+    <version>0.10.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.commonmark/commonmark-ext-heading-anchor -->
 <dependency>
     <groupId>org.commonmark</groupId>
     <artifactId>commonmark-ext-heading-anchor</artifactId>
-    <version>0.21.0</version>
+    <version>0.10.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.commonmark/commonmark-ext-gfm-tables -->
 <dependency>
     <groupId>org.commonmark</groupId>
     <artifactId>commonmark-ext-gfm-tables</artifactId>
-    <version>0.18.0</version>
+    <version>0.10.0</version>
 </dependency>
 ```
 
