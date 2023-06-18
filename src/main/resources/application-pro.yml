@@ -2,9 +2,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: root
+    url: jdbc:mysql://ohunm00fjsjs1uzy.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	:3306/sn5t6uc61cwumuka?useUnicode=true&characterEncoding=utf-8
+    username: lbj2qk8dibtlbgko	
+    password: afaytrw84ypc04ja	
   #In production, it's often highly recommended you use none or simply don't specify this property. That is because it's common practice for DBAs to review migration scripts for database changes, particularly if your database is shared across multiple services and applications.
   jpa:
     hibernate:
