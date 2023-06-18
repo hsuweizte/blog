@@ -16,7 +16,7 @@
     <description>blog-hsuweizte</description>
 
     <properties>
-        <java.version>20</java.version>
+        <java.version>17</java.version>
         <mysql.version>8.0.33</mysql.version>
     </properties>
 
