@@ -106,7 +106,7 @@
 
 [背景圖片資源](https://www.toptal.com/designers/subtlepatterns/)
 
-### 2.3 外掛程式集成
+### 2.3 套件集成
 
 [編輯器 Markdown](https://pandao.github.io/editor.md/)
 
