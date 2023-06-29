@@ -4,7 +4,7 @@
 
 [快速展示](https://youtu.be/CFzC0LXGN48)
 
-[Heroku](https://secret-hamlet-11321-8154c95f1d9d.herokuapp.com/)
+[Heroku](https://hsuweizte-blog-light-42d1eecf3858.herokuapp.com/)
 
 
 **使用的技術：**
