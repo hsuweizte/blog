@@ -1,4 +1,5 @@
 package com.hsuweizte.bloghsuweizte.util;
+
 import org.commonmark.Extension;
 import org.commonmark.ext.gfm.tables.TableBlock;
 import org.commonmark.ext.gfm.tables.TablesExtension;

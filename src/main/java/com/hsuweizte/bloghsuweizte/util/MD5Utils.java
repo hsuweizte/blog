@@ -1,4 +1,5 @@
 package com.hsuweizte.bloghsuweizte.util;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
