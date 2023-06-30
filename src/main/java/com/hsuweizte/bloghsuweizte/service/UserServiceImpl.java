@@ -1,4 +1,5 @@
 package com.hsuweizte.bloghsuweizte.service;
+
 import com.hsuweizte.bloghsuweizte.dao.UserRepository;
 import com.hsuweizte.bloghsuweizte.po.User;
 import com.hsuweizte.bloghsuweizte.util.MD5Utils;
