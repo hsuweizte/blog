@@ -10,9 +10,6 @@ spring:
   messages:
     basename: i18n/messages
 
-  mvc:
-    favicon:
-      enabled: true
 
 comment.avatar: /images/avatar.png
 
